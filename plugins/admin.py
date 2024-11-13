@@ -37,7 +37,7 @@ async def buypremium(bot, message):
 @Client.on_message((filters.channel | filters.private) & filters.user(ADMIN) & filters.command(["ceasepower"]))
 async def ceasepremium(bot, message):
     button = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Limit 1GB", callback_data="cp1"),
+        [InlineKeyboardButton("Limit 4GB", callback_data="cp1"),
         InlineKeyboardButton("All Power Cease", callback_data="cp2")],
         [InlineKeyboardButton("✖️ Cancel ✖️",callback_data = "cancel")]
         ])
@@ -53,7 +53,7 @@ async def resetpower(bot, message):
         InlineKeyboardButton("❌ No",callback_data = "cancel")]
         ])
         
-    await message.reply_text(text=f"Do You Really Want To Reset Daily Limit To Default Data Limit 2GB ?", quote=True, reply_markup=button)
+    await message.reply_text(text=f"Do You Really Want To Reset Daily Limit To Default Data Limit 4GB ?", quote=True, reply_markup=button)
     
     
     
@@ -103,11 +103,11 @@ async def vip3(bot,update):
 async def cp1(bot,update):
     id = update.message.reply_to_message.text.split("/ceasepower")
     user_id = id[1].replace(" ", "")
-    inlimit  = 2147483652
-    uploadlimit(int(user_id), 2147483652)
+    inlimit  = 4147483652
+    uploadlimit(int(user_id), 4147483652)
     usertype(int(user_id),"⚠️ Account Downgraded")
     addpre(int(user_id))
-    await update.message.edit("Added Successfully To Upload Limit 2GB")
+    await update.message.edit("Added Successfully To Upload Limit 4GB")
     await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYou Are Downgraded To Cease <b>Limit 2GB</b>. Check Your Plan Here /myplan \n\n<b>Contact Admin :</b> @CodeXBro")
 
 
@@ -116,12 +116,12 @@ async def cp1(bot,update):
 async def cp2(bot,update):
     id = update.message.reply_to_message.text.split("/ceasepower")
     user_id = id[1].replace(" ", "")
-    inlimit  = 0
-    uploadlimit(int(user_id), 0)
+    inlimit  = 4147483652
+    uploadlimit(int(user_id), 4147483652)
     usertype(int(user_id),"⚠️ Account Downgraded")
     addpre(int(user_id))
-    await update.message.edit("Added Successfully To Upload Limit 0GB")
-    await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYou Are Downgraded To Cease <b>Limit 0GB</b>. Check Your Plan Here /myplan \n\n<b>Contact Admin :</b> @CodeXBro")
+    await update.message.edit("Added Successfully To Upload Limit 4GB")
+    await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYou Are Downgraded To Cease <b>Limit 4GB</b>. Check Your Plan Here /myplan \n\n<b>Contact Admin :</b> @Mrsasuke07")
 
 
 
@@ -130,9 +130,9 @@ async def cp2(bot,update):
 async def dft(bot,update):
     id = update.message.reply_to_message.text.split("/resetpower")
     user_id = id[1].replace(" ", "")
-    inlimit = 2147483652
-    uploadlimit(int(user_id), 2147483652)
+    inlimit = 4147483652
+    uploadlimit(int(user_id), 4147483652)
     usertype(int(user_id),"🆓 Free")
     addpre(int(user_id))
-    await update.message.edit("Daily Data Limit Has Been Reset Successfully.\n\nThis Account Has Default 2GB Remaining Capacity")
-    await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYour Daily Data Limit Has Been Reset Successfully. Check Your Plan Here /myplan\n\n<b>Contact Admin :</b> @CodeXBro")
+    await update.message.edit("Daily Data Limit Has Been Reset Successfully.\n\nThis Account Has Default 4GB Remaining Capacity")
+    await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYour Daily Data Limit Has Been Reset Successfully. Check Your Plan Here /myplan\n\n<b>Contact Admin :</b> @Mrsasuke07")
