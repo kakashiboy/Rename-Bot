@@ -23,9 +23,9 @@ Daily Upload limit 100GB
 Price Rs 179  ind /🌎 2.16$  per Month
 
 Payment Details :-
-<b>➜ UPI ID :</b> <code>RahulReviews@UPI</code>
+<b>➜ UPI ID :</b> <code>bsmoker632@okhdfcbank</code>
 
-After Payment Send Screenshots Of Payment To Admin @CodeXBro"""
+After Payment Send Screenshots Of Payment To Admin @Mrsasuke07"""
     
     keybord = InlineKeyboardMarkup([
         [InlineKeyboardButton("🦋 Admin", url = "https://telegram.me/CodeXBro"),
@@ -55,12 +55,12 @@ Daily Upload limit 100GB
 Price Rs 179  ind /🌎 2.16$  per Month
 
 Payment Details :-
-<b>➜ UPI ID :</b> <code>RahulReviews@UPI</code>
+<b>➜ UPI ID :</b> <code>bsmoker632@okhdfcbank</code>
 
-After Payment Send Screenshots Of Payment To Admin @CodeXBro"""
+After Payment Send Screenshots Of Payment To Admin @Mrsasuke07"""
     
     keybord = InlineKeyboardMarkup([
-        [InlineKeyboardButton("🦋 Admin", url = "https://telegram.me/CodeXBro"),
+        [InlineKeyboardButton("🦋 Admin", url = "https://telegram.me/Mrsasuke07"),
         InlineKeyboardButton("✖️ Cancel", callback_data="cancel")]
         ])
     
