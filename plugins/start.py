@@ -36,11 +36,11 @@ async def start(client, message):
     text = f"""{message.from_user.mention} \nɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ.\n\nᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!\nᴏᴡɴᴇʀ @CodeXBro</b>"""
     
     button = InlineKeyboardMarkup([
-        [InlineKeyboardButton("📢 Updates", url="https://telegram.me/RahulReviewsYT"),
-        InlineKeyboardButton("💬 Support", url="https://telegram.me/CodeXSupport")],
+        [InlineKeyboardButton("📢 Updates", url="https://t.me/+9uK_925FRts1NGVl"),
+        InlineKeyboardButton("💬 Support", url="https://t.me/+9uK_925FRts1NGVl")],
         [InlineKeyboardButton("🛠️ Help", callback_data='help'),
         InlineKeyboardButton("❤️‍🩹 About", callback_data='about')],
-        [InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url="https://telegram.me/CodeXBro")]
+        [InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url="https://telegram.me/Mrsasuke07")]
         ])
     
     await message.reply_photo(
@@ -121,7 +121,7 @@ async def send_doc(client, message):
             
             if STRING_SESSION:
                 if buy_date == None:
-                    await message.reply_text(f"You Can't Upload More Than 2GB File.\n\nYour Plan Doesn't Allow To Upload Files That Are Larger Than 2GB.\n\nUpgrade Your Plan To Rename Files Larger Than 2GB.", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💳 Upgrade", callback_data="upgrade")]]))
+                    await message.reply_text(f"You Can't Upload More Than 4GB File.\n\nYour Plan Doesn't Allow To Upload Files That Are Larger Than 2GB.\n\nUpgrade Your Plan To Rename Files Larger Than 2GB.", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💳 Upgrade", callback_data="upgrade")]]))
                     return
                 pre_check = check_expi(buy_date)
                 if pre_check == True:
@@ -129,7 +129,7 @@ async def send_doc(client, message):
                     total_rename(int(botid), prrename)
                     total_size(int(botid), prsize, file.file_size)
                 else:
-                    uploadlimit(message.from_user.id, 2147483648)
+                    uploadlimit(message.from_user.id, 4147483648)
                     usertype(message.from_user.id, "Free")
 
                     await message.reply_text(f'Your Plan Expired On {buy_date}', quote=True)
@@ -141,7 +141,7 @@ async def send_doc(client, message):
             if buy_date:
                 pre_check = check_expi(buy_date)
                 if pre_check == False:
-                    uploadlimit(message.from_user.id, 2147483648)
+                    uploadlimit(message.from_user.id, 4147483648)
                     usertype(message.from_user.id, "Free")
             
             filesize = humanize.naturalsize(file.file_size)
