@@ -121,7 +121,7 @@ async def send_doc(client, message):
             
             if STRING_SESSION:
                 if buy_date == None:
-                    await message.reply_text(f"You Can't Upload More Than 4GB File.\n\nYour Plan Doesn't Allow To Upload Files That Are Larger Than 2GB.\n\nUpgrade Your Plan To Rename Files Larger Than 2GB.", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💳 Upgrade", callback_data="upgrade")]]))
+                    await message.reply_text(f"You Can't Upload More Than 4GB File.\n\nYour Plan Doesn't Allow To Upload Files That Are Larger Than 4GB.\n\nUpgrade Your Plan To Rename Files Larger Than 4GB.", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💳 Upgrade", callback_data="upgrade")]]))
                     return
                 pre_check = check_expi(buy_date)
                 if pre_check == True:
@@ -135,7 +135,7 @@ async def send_doc(client, message):
                     await message.reply_text(f'Your Plan Expired On {buy_date}', quote=True)
                     return
             else:
-                await message.reply_text("You Can't Upload More Than 2GB File.\n\nYour Plan Doesn't Allow To Upload Files That Are Larger Than 2GB.\n\nUpgrade Your Plan To Rename Files Larger Than 2GB.", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💳 Upgrade", callback_data="upgrade")]]))
+                await message.reply_text("You Can't Upload More Than 4GB File.\n\nYour Plan Doesn't Allow To Upload Files That Are Larger Than 4GB.\n\nUpgrade Your Plan To Rename Files Larger Than 4GB.", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💳 Upgrade", callback_data="upgrade")]]))
                 return
         else:
             if buy_date:
