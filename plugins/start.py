@@ -39,7 +39,7 @@ async def start(client, message):
         [InlineKeyboardButton("📢 Updates", url="https://t.me/+9uK_925FRts1NGVl"),
         InlineKeyboardButton("💬 Support", url="https://t.me/+9uK_925FRts1NGVl")],
         [InlineKeyboardButton("🛠️ Help", callback_data='help'),
-        InlineKeyboardButton("❤️‍🩹 About", callback_data='')],
+        InlineKeyboardButton("❤️‍🩹 About", callback_data='about')],
         [InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url="https://telegram.me/Mrsasuke07")]
         ])
     
