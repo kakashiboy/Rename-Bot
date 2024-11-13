@@ -28,7 +28,7 @@ Payment Details :-
 After Payment Send Screenshots Of Payment To Admin @Mrsasuke07"""
     
     keybord = InlineKeyboardMarkup([
-        [InlineKeyboardButton("🦋 Admin", url = "https://telegram.me/CodeXBro"),
+        [InlineKeyboardButton("🦋 Admin", url = "https://telegram.me/Mrsasuke07"),
         InlineKeyboardButton("✖️ Cancel", callback_data="cancel")]
         ])
     
